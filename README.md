@@ -1,6 +1,8 @@
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+I will be using the latest version of React, 17.0.1.
+
 
 ## Available Scripts
 
