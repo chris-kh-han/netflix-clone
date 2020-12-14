@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import * as ROUTES from './constants/routes'
-import Home from './pages/home'
+import * as ROUTES from "./constants/routes";
+import { Home, Signin, Signup, Browse } from "./pages";
 
 function App() {
   return (
@@ -11,13 +11,13 @@ function App() {
           <Home />
         </Route>
         <Route path={ROUTES.SIGN_UP}>
-          <p>I will be the sign un page</p>
+          <Signup />
         </Route>
         <Route path={ROUTES.SIGN_IN}>
-          <p>I will be the sign in page</p>
+          <Signin />
         </Route>
         <Route path={ROUTES.BROWSE}>
-          <p>I will be the browse page</p>
+          <Browse />
         </Route>
       </Switch>
     </Router>
