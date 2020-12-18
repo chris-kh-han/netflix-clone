@@ -4,18 +4,23 @@ import { GlobalStyles } from "./global-styles";
 import App from "./App";
 import { FirebaseContext } from "./context/firebase";
 
-const firebaseConfig = {
-  apiKey: "AIzaSyC8wDeEQnrIrUMlCem3h1eO98x6EEupKTw",
-  authDomain: "netflix-clone-d6714.firebaseapp.com",
-  databaseURL: "https://netflix-clone-d6714.firebaseio.com",
-  projectId: "netflix-clone-d6714",
-  storageBucket: "netflix-clone-d6714.appspot.com",
-  messagingSenderId: "949677891578",
-  appId: "1:949677891578:web:db80d7160ba672f59a4e43",
-  measurementId: "G-5NXZJ3XVGR"
+// import { seedDatabase } from './seed'
+
+let firebaseConfig = {
+  apiKey: "AIzaSyBQKU5NSa3CF_kynQdUPuw7gUallcjmQmk",
+  authDomain: "netflix2020-f1737.firebaseapp.com",
+  databaseURL: "https://netflix2020-f1737-default-rtdb.firebaseio.com",
+  projectId: "netflix2020-f1737",
+  storageBucket: "netflix2020-f1737.appspot.com",
+  messagingSenderId: "598985831356",
+  appId: "1:598985831356:web:71b0ed101a45dd23d131b9"
 };
 
-// const firebase = window.firebase.initializeApp(firebaseConfig);
+const firebase = window.firebase.initializeApp(firebaseConfig);
+// seedDatabase(firebase)
+
+
+
 
 ReactDOM.render(
   <React.StrictMode>
