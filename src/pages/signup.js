@@ -18,7 +18,7 @@ export default function Signup() {
 
   const handleSignup = (e) => {
     e.preventDefault();
-
+    
     firebase
       .auth()
       .createUserWithEmailAndPassword(emailAddress, password)
@@ -30,13 +30,13 @@ export default function Signup() {
 
         })
         .then(() => {
-          setEmailAddress('');
-          setPassword('')
-          setError('')
+
           history.push(ROUTES.BROWSE);
         })
       })
       .catch((error) => {
+        setEmailAddress('');
+        setPassword('')
         setError(error.message);
       });
   };
